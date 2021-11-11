@@ -26,7 +26,7 @@
     -->
     <title>React Redux App</title>
   </head>
-  <body>
+  <body id='appBody'>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -40,4 +40,27 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyALbMcnYIoKL_m3q09WqEeCoYquyKY1oBg",
+    authDomain: "kerusite.firebaseapp.com",
+    projectId: "kerusite",
+    storageBucket: "kerusite.appspot.com",
+    messagingSenderId: "378613264112",
+    appId: "1:378613264112:web:91b19466dc048f2db41c35",
+    measurementId: "G-7P2TKWC54B"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </html>

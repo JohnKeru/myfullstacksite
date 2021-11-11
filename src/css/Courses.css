@@ -1,0 +1,267 @@
+.coursesContainer {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  width: 90%;
+  margin: 40px auto 0 auto;
+  color: #dae3f0;
+}
+.criminology_Container,
+.animation_Container,
+.programmer_Container {
+  position: relative;
+  overflow: hidden;
+}
+.criminology_Container {
+  background: rgba(0, 0, 0, 0.1);
+}
+.animation_Container {
+  background: rgba(255, 255, 255, 0.1);
+}
+.programmer_Container {
+  background: rgba(0, 0, 0, 0.1);
+}
+.courseName {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2.8rem;
+}
+.contentContainer {
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+#ct {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+/* ------------------------------------------CRIMINOLOG COURSE */
+
+.cImage > img {
+  position: absolute;
+  width: 350px;
+  opacity: 0.3;
+  z-index: -1;
+}
+.crim1 {
+  top: 0;
+  right: -80px;
+  transform: rotate(-30deg);
+}
+.crim2 {
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* ------------------------------------------ANIMATION COURSE */
+.aImage {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 10px 5px 10px;
+  margin: 0 20px;
+}
+.a1 {
+  width: 300px;
+  height: 150px;
+}
+.a2 {
+  width: 145px;
+  height: 100px;
+  padding-bottom: 5px;
+}
+.a {
+  margin-right: 5px;
+}
+.b {
+  margin-left: 5px;
+}
+.a1,
+.a2 {
+  opacity: 0.9;
+  border-radius: 5px;
+  transition: 400ms ease-in-out;
+}
+.a1:hover,
+.a2:hover {
+  transform: scale(1.019);
+  opacity: 1;
+  cursor: pointer;
+}
+.a1:active,
+.a2:active,
+.prog1:active {
+  transition: 500ms ease;
+  transform: scale(1.1);
+}
+.aOutofBox {
+  /* 
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  */
+  opacity: 0.9;
+  width: 250px;
+  z-index: -2;
+  position: absolute;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  right: -50px;
+}
+.imageClick {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  padding-bottom: 70px;
+  width: 100%;
+  height: 100%;
+}
+.imageClick > div > img {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 10px 1px 116px 35px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 1px 116px 35px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 1px 116px 35px rgba(0, 0, 0, 0.75);
+}
+
+/* ------------------------------------------BSIT COURSE */
+
+.prog1 {
+  cursor: pointer;
+  margin-left: 20px;
+  width: 350px;
+  height: 300px;
+}
+@media (max-width: 1217px) {
+  .forProgramming {
+    display: block;
+    align-items: center;
+    max-width: 100%;
+    margin: 10px;
+    padding: 30px 10px;
+  }
+  .bImage {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .prog1 {
+    margin: auto;
+    width: 80%;
+    height: 250px;
+  }
+}
+@media (max-width: 999px) {
+  .contentContainer {
+    display: block;
+    align-items: center;
+    max-width: 100%;
+    margin: 10px;
+    padding: 30px 10px;
+  }
+  .aImage {
+    display: flex;
+    width: 94%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .a1 {
+    width: 100%;
+    height: 210px;
+  }
+  .a2 {
+    margin-top: 10px;
+    width: 49%;
+    height: 150px;
+  }
+  .aOutofBox {
+    display: none;
+  }
+  .imageClick > div > img {
+    width: 85%;
+    height: 450px;
+  }
+}
+@media (max-width: 634px) {
+  .a2 {
+    width: 48%;
+  }
+}
+@media (max-width: 565px) {
+  .aImage {
+    justify-content: space-evenly;
+  }
+  .a2 {
+    width: 48%;
+  }
+}
+@media (max-width: 891px) {
+  .imageClick > div > img {
+    height: 300px;
+  }
+}
+@media (max-width: 619px) {
+  .coursesContainer {
+    width: 100%;
+  }
+  .courseName {
+    font-size: 2.7rem;
+  }
+  #ct {
+    padding: 0;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    margin-top: 15px;
+  }
+  .cImage > img {
+    position: absolute;
+    width: 200px;
+    opacity: 0.3;
+    z-index: -1;
+  }
+  .a1 {
+    height: 200px;
+  }
+  .a2 {
+    height: 120px;
+  }
+  .prog1 {
+    width: 100%;
+    height: 250px;
+  }
+}
+@media (max-width: 451px) {
+  .imageClick > div > img {
+    width: 100%;
+  }
+}
+@media (max-width: 393px) {
+  .courseName {
+    font-size: 2.1rem;
+  }
+}
+/*  
+.Animation {
+  border-image: linear-gradient(
+    to bottom right,
+    #b827fc 0%,
+    #2c90fc 25%,
+    #b8fd33 50%,
+    #fec837 75%,
+    #fd1892 100%
+  );
+  border-image-slice: 1;
+}*/

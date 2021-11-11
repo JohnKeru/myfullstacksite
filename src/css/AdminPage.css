@@ -1,0 +1,225 @@
+.topSettings {
+  padding: 10px 0 25px 0;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.students_Record {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.searchInputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchIcon {
+  cursor: pointer;
+  padding: 0 5px;
+  width: 40px;
+  height: 39.6px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.inputUser {
+  padding: 12px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 250px;
+  border: none;
+  outline: none;
+  box-shadow: 0 10px 50px #333;
+}
+.totalNum {
+  margin: 10px auto auto auto;
+  width: 200px;
+  color: rgb(199, 199, 199);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.viewOnTable {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  cursor: default;
+  font-size: 1rem;
+}
+.users_Container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.profileDiv,
+.hideDiv {
+  position: relative;
+  margin: 15px;
+  width: 240px;
+}
+.hideDiv {
+  z-index: -1;
+}
+.eachName {
+  font-size: 1.5rem;
+}
+.eachEmail {
+  font-size: 1.1rem;
+}
+.profileId {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: default;
+}
+.profileOption {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+.profileOption > h5 {
+  margin: 0 10px;
+}
+.deleteAccount {
+  padding-left: 30px;
+  border-left: 1px solid gray;
+}
+.goToProfile {
+  padding-right: 10px;
+}
+.deleteAccount:hover {
+  cursor: pointer;
+  color: #ff4343;
+}
+.goToProfile:hover {
+  color: #77a8f7;
+  cursor: pointer;
+}
+.stop-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.FilterBackgroundPercent,
+.FilterBackgroundVh {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+}
+.FilterBackgroundPercent {
+  height: 110%;
+}
+.FilterBackgroundVh {
+  height: 100vh;
+}
+.Filter {
+  position: fixed;
+  color: #333;
+  font-size: 1.4rem;
+  width: 300px;
+  height: 140px;
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  box-shadow: 0 10px 30px #000000;
+  z-index: 3;
+}
+.selectedDeleteName {
+  color: #ff3333;
+}
+.UnderFilter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+.UnderFilter > p {
+  margin-right: 10px;
+}
+.UnderFilter > div {
+  display: grid;
+}
+.UnderFilter > div > button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin: 10px 0;
+}
+.cancelButton,
+.deleteButton {
+  opacity: 0.8;
+}
+.cancelButton:hover,
+.deleteButton:hover,
+.cancelButton:active,
+.deleteButton:active {
+  opacity: 1;
+}
+.cancelButton {
+  background: #0748b0;
+}
+.deleteButton {
+  background: #ee0000;
+}
+@media (max-width: 863px) {
+  .students_Record {
+    font-size: 3rem;
+  }
+  .profileOption {
+    margin-top: 5px;
+  }
+  .profileOption > h5 {
+    margin: 0 5px;
+  }
+}
+@media (max-width: 707px) {
+  .students_Record {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .profileOption > h5 {
+    font-size: 0.68rem;
+  }
+}
+@media (max-width: 477px) {
+  .students_Record {
+    font-size: 2rem;
+  }
+  .searchIcon {
+    height: 35.5px;
+  }
+  .inputUser {
+    padding: 10px 15px;
+    width: 200px;
+  }
+  .users_Container {
+    padding: 0;
+  }
+}
+@media (max-width: 396px) {
+  .searchIcon {
+    width: 30px;
+    height: 34.8px;
+  }
+  .inputUser {
+    padding: 9px;
+    width: 170px;
+  }
+  .Filter {
+    top: 150px;
+    width: 250px;
+    font-size: 1.1rem;
+  }
+}

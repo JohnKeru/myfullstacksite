@@ -1,0 +1,168 @@
+.This_is_Navbar_Container {
+  display: block;
+  align-items: center;
+}
+.This_is_For_Logo {
+  text-align: center;
+  padding: 5px 0;
+  transition: 500ms ease;
+  transform: translateX(0%);
+}
+.This_is_For_Logo > img {
+  filter: drop-shadow(0 1px 10px #000000);
+  width: 70px;
+  height: 70px;
+}
+.This_is_For_Navigation {
+  padding: 3px 0;
+}
+.navImage,
+.exact {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  transition: 150ms ease;
+  opacity: 0.7;
+}
+.navImage:hover {
+  color: rgb(232, 232, 232);
+  opacity: 1;
+}
+.exact {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.navImage > img,
+.exact > img {
+  width: 25px;
+  height: 20px;
+  margin-right: 3px;
+}
+.ulList {
+  padding: 2px 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: 700;
+}
+.fixed_Icon,
+.theme_Icon {
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 999px;
+  background-color: #0748b0;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.fixed_Icon {
+  position: fixed;
+  top: 4px;
+  right: 20px;
+}
+.theme_Icon {
+  margin: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+}
+.loggingOut {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.loggingOut > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  color: #333;
+  box-shadow: 0 10px 50px #000000;
+  background: #fff;
+  padding: 0 20px;
+  height: 100px;
+  border-radius: 5px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.loggingOut > div > img {
+  width: 50px;
+  height: 50px;
+}
+.scrollUp {
+  position: fixed;
+  text-decoration: none;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  background: rgb(80, 148, 136);
+  padding: 10px 14px;
+  outline: none;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+  z-index: 2;
+}
+@media (max-width: 892px) {
+  .This_is_For_Logo > img {
+    width: 65px;
+    height: 65px;
+  }
+  .This_is_For_Navigation {
+    padding: 3px 0;
+  }
+  .navImage > img {
+    width: 28px;
+    height: 28px;
+  }
+  .theme_Icon {
+    height: 25px;
+    width: 25px;
+  }
+  .scrollUp {
+    bottom: 15px;
+    font-size: 13px;
+    right: 10px;
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 682px) {
+  .This_is_For_Logo > img {
+    width: 60px;
+    height: 60px;
+  }
+  .ulList {
+    justify-content: space-evenly;
+  }
+  .navImage > li {
+    display: none;
+  }
+  .This_is_For_Navigation {
+    padding: 4px 0;
+  }
+  .exact > img,
+  .navImage > img {
+    width: 28px;
+    height: 25px;
+  }
+  .fixed_Icon {
+    right: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .exact > li {
+    font-size: 0.92rem;
+  }
+}
